@@ -1,27 +1,66 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-<html>
+<!DOCTYPE html>
+<html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a equipe de suporte da Suporte Tech para esclarecer dúvidas e enviar suas solicitações.">
-    <title>Apresentação</title>
+    <title>Grade Horária de Aulas do Módulo</title>
 </head>
 
-<div class="aula-multimidia" style="width: 100%; max-width: 800px; margin: auto;">
-    <h3>Aula de Redes</h3>
-    <video
-        src="https://dl6.webmfiles.org/big-buck-bunny_trailer.webm"
-        controls
-        width="640"
-        height="360"
-        style="max-width: 100%; height: auto;">
-        <track src="legendas.vtt" kind="captions" srclang="pt" label="Português" default>
-    </video>
-    
-    <br><br>
+<body>
 
-    <h3>Localização</h3>
-    <a href="https://maps.app.goo.gl/DHg4edarZ6v5wvu1A" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ver localização no Google Maps</a>
-</div>
+    <div class="bloco-cronograma">
+        <h2 class="titulo-seccao">Horários acadêmicos</h2>
+        <table border="1">
+            <caption>Horários das aulas do módulo</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Aula</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estruturação Multimídia</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+            </tbody>
+        </table>
 
+        <p>Recursos necessários:</p>
+
+        <ul>
+            <li>Computador com IDE configurada</li>
+            <li>Arquivos de legenda (.vtt) prontos</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <section class="bloco-video">
+        <h2>Apresentação da Disciplina</h2>
+        <video controls>
+            <source src="https://dl6.webmfiles.org/big-buck-bunny_trailer.webm" type="video/mp4">
+            <track
+                src="legendas.vtt"
+                kind="captions"
+                srclang="pt"
+                label="Português"
+            >
+        </video>
+    </section>
+    <section class="bloco-mapa">
+        <h2>Localização do Campus IFF</h2>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.4768365739183!2d-41.33936682387425!3d-21.761798780077335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd43f2476c3ad%3A0xb32af6e0cbf8c2f8!2sIFF%20Campos%20Centro!5e0!3m2!1spt-BR!2sbr!4v1793819155716!5m2!1spt-BR!2sbr"
+            title="Mapa de localização do Campus IFF"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            loading="lazy" 
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+    </section>
+</body>
+</html>
