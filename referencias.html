@@ -40,6 +40,7 @@
 
         p, li {
             font-size: 18px;
+            line-height: 1.5;
         }
 
         a {
@@ -89,6 +90,9 @@
                         <a href="#links-e-imagens">Links e Imagens</a>
                     </li>
                     <li>
+                        <a href="#listas-e-tabelas">Listas e Tabelas</a>
+                    </li>
+                    <li>
                         <a href="#documentacao-oficial">Documentação Oficial</a>
                     </li>
                 </ul>
@@ -102,7 +106,19 @@
                     <h2>Tags Básicas</h2>
 
                     <p>
-                        <strong>&lt;h1&gt; ao &lt;h6&gt;</strong>: Definem a hierarquia de títulos.
+                        <strong>&lt;h1&gt; ao &lt;h6&gt;</strong>: Definem a hierarquia de títulos e subtítulos da página (sendo &lt;h1&gt; o mais importante).
+                    </p>
+                    <p>
+                        <strong>&lt;p&gt;</strong>: Define um parágrafo de texto.
+                    </p>
+                    <p>
+                        <strong>&lt;br&gt;</strong>: Insere uma quebra de linha simples no texto (tag sem fechamento).
+                    </p>
+                    <p>
+                        <strong>&lt;hr&gt;</strong>: Cria uma linha divisória horizontal para separar seções temáticas.
+                    </p>
+                    <p>
+                        <strong>&lt;strong&gt; e &lt;em&gt;</strong>: Destacam trechos com importância semântica em <strong>negrito</strong> e <em>itálico</em>, respectivamente.
                     </p>
 
                     <p>
@@ -110,13 +126,22 @@
                     </p>
                 </section>
 
-                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
 
                 <section id="links-e-imagens">
                     <h2>Links e Imagens</h2>
 
                     <p>
-                        <strong>&lt;a href="..."&gt;</strong>: Tag âncora usada para criar hiperlinks.
+                        <strong>&lt;a href="..."&gt;</strong>: Tag âncora usada para criar hiperlinks (relativos, absolutos ou de fragmento com #).
+                    </p>
+                    <p>
+                        <strong>target="_blank"</strong>: Atributo usado dentro da tag &lt;a&gt; para abrir um link externo em uma nova aba do navegador.
+                    </p>
+                    <p>
+                        <strong>&lt;img src="..." alt="..."&gt;</strong>: Insere uma imagem na página. O atributo <strong>src</strong> indica o caminho ou URL da imagem, e o <strong>alt</strong> fornece o texto alternativo de acessibilidade.
+                    </p>
+                    <p>
+                        <strong>&lt;figure&gt; e &lt;figcaption&gt;</strong>: Agrupam elementos visuais (como imagens) e adicionam uma legenda descritiva logo abaixo.
                     </p>
 
                     <p>
@@ -124,21 +149,53 @@
                     </p>
                 </section>
 
-                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+
+                <section id="listas-e-tabelas">
+                    <h2>Listas e Tabelas</h2>
+
+                    <p>
+                        <strong>&lt;ul&gt; e &lt;ol&gt;</strong>: Criam listas não ordenadas (com marcadores) e listas ordenadas (numeradas).
+                    </p>
+                    <p>
+                        <strong>&lt;li&gt;</strong>: Representa cada item dentro de uma lista &lt;ul&gt; ou &lt;ol&gt; (para aninhar uma sublista, ela deve ser colocada antes do fechamento &lt;/li&gt;).
+                    </p>
+                    <p>
+                        <strong>&lt;table&gt;</strong>: Define a estrutura principal de uma tabela de dados.
+                    </p>
+                    <p>
+                        <strong>&lt;tr&gt;</strong>: Cria uma linha dentro da tabela (<em>Table Row</em>).
+                    </p>
+                    <p>
+                        <strong>&lt;th&gt; e &lt;td&gt;</strong>: Definem uma célula de cabeçalho (em negrito e centralizada por padrão) e uma célula de dado comum dentro de uma linha.
+                    </p>
+                    <p>
+                        <strong>&lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;</strong>: Organizam semanticamente o cabeçalho, o corpo de dados e o rodapé da tabela.
+                    </p>
+
+                    <p>
+                        <a href="#topo">&#11014; Voltar ao topo</a>
+                    </p>
+                </section>
+
+                <br><br><br><br><br><br><br><br><br><br>
 
                 <section id="documentacao-oficial">
                     <h2>Documentação Oficial</h2>
 
                     <p>
-                        Consulte as referências oficiais de desenvolvimento web (abrem em nova aba):
+                        Links absolutos para consulta na documentação oficial (abrem em nova aba):
                     </p>
 
                     <ul>
                         <li>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - Guia de HTML</a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - Documentação Completa de HTML</a>
                         </li>
                         <li>
-                            <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - Tutorial de HTML</a>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">MDN Web Docs - Referência de Elementos e Tags HTML</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/" target="_blank">W3Schools - Guia Prático e Exemplos de HTML</a>
                         </li>
                     </ul>
 
