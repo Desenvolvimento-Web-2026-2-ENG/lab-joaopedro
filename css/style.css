@@ -1,1 +1,152 @@
+:root {
+    --cor-primaria: #263b5e;
+    --cor-fundo: #f0f0f0;
+    --cor-superficie: #ffffff;
+    --cor-texto: #333333;
+    --cor-borda: #cccccc;
+    --cor-link: #2457a6;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.pagina {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    gap: 1.5rem;
+
+    grid-template-areas:
+        "header header"
+        "aside  main"
+        "footer footer";
+}
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-superficie);
+
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.cabecalho p {
+    margin-bottom: 0;
+}
+
+.barra-lateral {
+    grid-area: aside;
+
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+
+    padding: 1.5rem;
+}
+
+.barra-lateral h2 {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 0.5rem;
+}
+
+.barra-lateral h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.barra-lateral hr {
+    border: none;
+    border-top: 1px solid #999999;
+    margin: 15px 0;
+}
+
+
+.barra-lateral ul,
+.barra-lateral ol {
+    padding-left: 1.5rem;
+}
+
+.barra-lateral li {
+    margin-bottom: 0.6rem;
+}
+
+.barra-lateral a {
+    color: var(--cor-link);
+    text-decoration: none;
+}
+
+.barra-lateral a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+.conteudo {
+    grid-area: main;
+
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+
+    padding: 1.5rem;
+
+    min-height: 500px;
+}
+
+.rodape {
+    grid-area: footer;
+
+    background-color: #0f172a;
+    color: #cbd5e1;
+
+    text-align: center;
+    padding: 1rem;
+}
+
+.rodape p {
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .pagina {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto auto 1fr auto;
+
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+}
